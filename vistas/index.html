@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div align="center" class="head1">
+		<h1 >Restaurant & Bar</h1>
+		<a href="index.html"><img class="logo" src="/imagenes/logo.png" ></a>
+	</div>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#seccion1">Menu</a></li>
+					<li><a href="#seccion2">Pedidos</a></li>
+					<li><a href="#acerca-de">Acerca de</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="inicio">
+				<h2>Bienvenido</h2>
+				<p>En nuestro encantador establecimiento, 
+					fusionamos la calidez de un restaurante con la 
+					energía vibrante de un bar, 
+					ofreciendo una experiencia culinaria y 
+					de entretenimiento única. </p>
+			</section>
+
+			<section id="seccion1">
+				<h2>Sección de Menu</h2>
+				<p>Contenido de la Sección de Menu para los clientes</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Desayuno</th>
+							<th>Almuerzo</th>
+							<th>Cena</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Encebollado</td>
+							<td>Seco Carne con Arroz</td>
+							<td>Spaggetti</td>
+						</tr>
+						<tr>
+							<td>Ceviche</td>
+							<td>Ensaladas con Pollo Salteado</td>
+							<td>Carne a la parrilla</td>
+							
+						</tr>
+						<tr>
+							<td>Huevo Revuelto</td>
+							<td>Tofu estilo Peruano</td>
+							<td>Cerdo Asado</td>
+						</tr>
+					</tbody>
+				</table>
+				<center>
+					<img src="/imagenes/comidas.jpg" class="comidas">
+				</center>
+				
+			</section>
+
+			<section id="seccion2">
+				<h2>Pedidos a Domicilio</h2>
+				<p>Servicio a Domicilio para todo Guayaquilazo pago <b>SOLAMENTE</b> en efectivo</p>
+				<form action="procesar.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="mensaje">Pedido:</label>
+					<textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+
+			<section id="acerca-de">
+				<h2>Acerca de</h2>
+				<p>Ubicado en el corazón de <b>Guayaquilazo</b>, 
+					Restaurant & Bar es mucho más que un lugar para disfrutar 
+					de una excelente comida y bebida: es un destino donde la buena comida 
+					se encuentra con la hospitalidad excepcional y el ambiente acogedor.</p>
+
+			</section>
+		</main>
+	</div>
+    <footer>
+        <p>&copy; 2024 Mi sitio web</p>
+    </footer>
+</body>
+</html>
